@@ -37,7 +37,7 @@ export default Ember.Component.extend( {
 
   drop: function(event) {
     if (this.get('enableSort')) {
-      var obj = this.get('sortableObjectList');
+      let obj = this.get('sortableObjectList');
       this.sendAction('sortEndAction', obj, event);
     }
   }
